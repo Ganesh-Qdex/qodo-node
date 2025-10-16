@@ -1,9 +1,9 @@
-# Java CRUD Demo
+# Ruby CRUD Demo
 
-A simple Spring Boot application that implements CRUD operations for a User entity.
+A simple Sinatra application that implements CRUD operations for a User entity.
 
 ## User Entity
-- id: Long (auto-generated)
+- id: Integer (auto-generated)
 - name: String
 - email: String
 
@@ -17,21 +17,22 @@ A simple Spring Boot application that implements CRUD operations for a User enti
 
 ## Running the Application
 
-1. Make sure you have Java 17+ and Maven installed
-2. Navigate to the Java directory
-3. Run: `mvn spring-boot:run`
-4. The application will start on http://localhost:8080
+1. Make sure you have Ruby installed (2.7+ recommended)
+2. Navigate to the Ruby directory
+3. Install dependencies: `bundle install`
+4. Run: `ruby app.rb`
+5. The application will start on http://localhost:4567
 
 ## Example Requests
 
 Create a user:
 ```bash
-curl -X POST http://localhost:8080/api/users \
+curl -X POST http://localhost:4567/api/users \
   -H "Content-Type: application/json" \
   -d '{"name":"John Doe","email":"john@example.com"}'
 ```
 
 Get all users:
 ```bash
-curl http://localhost:8080/api/users
+curl http://localhost:4567/api/users
 ```
