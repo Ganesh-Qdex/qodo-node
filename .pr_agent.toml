@@ -1,1 +1,2 @@
-require_ticket_analysis_review=true
+[jira]
+jira_base_url = "https://coderabbit-test-jira.atlassian.net"
